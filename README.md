@@ -38,7 +38,6 @@ git fetch
 git checkout -b develop origin/develop 
 ```
 
-
 ## parase en develop
 ```code
 git checkout develop 
