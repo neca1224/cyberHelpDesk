@@ -28,3 +28,25 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## colaboradores
 - David Gutierrez
+
+
+# Pasos para comenzar con una nueva tarea
+
+## Traer develop por primera vez 
+```code
+git fetch
+git checkout -b develop origin/develop 
+```
+
+## parase en develop
+```code
+git checkout develop 
+```
+## Actualizar todos los cambios
+```
+git pull origin develop
+```
+## crear una rama copia de develop relacionada a la tarea
+```
+git checkout -b <nombre-rama>
+```
