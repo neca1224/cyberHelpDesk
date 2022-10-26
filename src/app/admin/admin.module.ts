@@ -10,6 +10,7 @@ import { AddUserComponent } from './pages/users/add-user/add-user.component';
 import { AddToolsComponent } from './pages/tools/add-tools/add-tools.component';
 import { AddMalwareComponent } from './pages/malware/add-malware/add-malware.component';
 import { PruebaComponent } from './pages/prueba/prueba.component';
+import { PruebasComponent } from './pages/pruebas/pruebas.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { PruebaComponent } from './pages/prueba/prueba.component';
     AddUserComponent,
     AddToolsComponent,
     AddMalwareComponent,
-    PruebaComponent
+    PruebaComponent,
+    PruebasComponent
   ],
   imports: [
     CommonModule,
