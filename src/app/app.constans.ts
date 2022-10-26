@@ -12,7 +12,7 @@ export const MENU = [
     icon: 'pi pi-fw pi-user',
     items: [
       {
-        label: 'Listadar Usuarios',
+        label: 'Listar Usuarios',
         icon: 'pi pi-list',
         url:'./admin/usuarios'
       },

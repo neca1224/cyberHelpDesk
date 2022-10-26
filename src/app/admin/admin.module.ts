@@ -9,6 +9,10 @@ import { ToolsComponent } from './pages/tools/tools.component';
 import { AddUserComponent } from './pages/users/add-user/add-user.component';
 import { AddToolsComponent } from './pages/tools/add-tools/add-tools.component';
 import { AddMalwareComponent } from './pages/malware/add-malware/add-malware.component';
+import { MaterialModule } from '../material/material.module';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -21,10 +25,12 @@ import { AddMalwareComponent } from './pages/malware/add-malware/add-malware.com
     AddToolsComponent,
     AddMalwareComponent
   ],
+
   imports: [
     CommonModule,
-    AdminRoutingModule
-    
+    AdminRoutingModule,
+    MaterialModule,
+    FormsModule
   ]
 })
 export class AdminModule { }

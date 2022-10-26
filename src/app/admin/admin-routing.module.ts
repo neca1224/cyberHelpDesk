@@ -24,7 +24,7 @@ const routes: Routes = [
       { path: 'malware', component: MalwareComponent },
       { path: 'malware/agregar', component: AddToolsComponent },
       { path: 'malware/editar/:id', component: AddToolsComponent },
-      { path: '**', redirectTo: 'adminstrador' },
+     //  { path: '**', redirectTo: 'adminstrador' },
     ],
   },
 ];
