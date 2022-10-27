@@ -15,7 +15,8 @@ import {ButtonModule} from 'primeng/button';
     MatListModule,
     MatButtonModule,
     AccordionModule,
-    TieredMenuModule,ButtonModule
+    TieredMenuModule,
+    ButtonModule
   ],
 })
 export class MaterialModule {}

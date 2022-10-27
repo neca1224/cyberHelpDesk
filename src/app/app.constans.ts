@@ -12,7 +12,7 @@ export const MENU = [
     icon: 'pi pi-fw pi-user',
     items: [
       {
-        label: 'Listadar Usuarios',
+        label: 'Listar Usuarios',
         icon: 'pi pi-list',
         url:'./admin/usuarios'
       },
@@ -74,6 +74,51 @@ export const MENU = [
         label: 'Editar Malware',
         icon: 'pi pi-file-edit',
         url:'./admin/malware/editar/:id'
+      },
+    ],
+  },
+  {
+    separator: true,
+  },
+  
+  {
+    label: 'Gestión Incidentes',
+    icon: 'pi pi-qrcode',
+    items: [
+      {
+        label: 'Listar Incidentes',
+        icon: 'pi pi-list',
+        url:'./gestionIncidentes/incidentes'
+      },
+      {
+        label: 'Agregar Incidentes',
+        icon: 'pi pi-plus',
+        url:'./gestionIncidentes/incidentes/agregar'
+      },
+      {
+        label: 'Editar Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestionIncidentes/incidentes/editar/:id'
+      },
+      {
+        label: 'Analisis Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestionIncidentes/analisis'
+      },
+      {
+        label: 'Gestión Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestionIncidentes/gestion'
+      },
+      {
+        label: 'Impacto Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestionIncidentes/impacto'
+      },
+      {
+        label: 'Cerrar Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestionIncidentes/cerrar'
       },
     ],
   },
