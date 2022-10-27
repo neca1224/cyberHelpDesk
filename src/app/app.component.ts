@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {MenuItem} from 'primeng/api';
 import { MENU } from './app.constans';
 
 @Component({

@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
+
+import { AccordionModule } from 'primeng/accordion';
+import {ButtonModule} from 'primeng/button';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { AccordionModule } from 'primeng/accordion';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import {TieredMenuModule} from 'primeng/tieredmenu';
-import {ButtonModule} from 'primeng/button';
+
 @NgModule({
   exports: [
-    MatSidenavModule,
-    MatToolbarModule,
+    AccordionModule,
+    ButtonModule,
+    MatButtonModule,
     MatIconModule,
     MatListModule,
-    MatButtonModule,
-    AccordionModule,
-    TieredMenuModule,
-    ButtonModule
+    MatSidenavModule,
+    MatToolbarModule,
+    TieredMenuModule
   ],
 })
 export class MaterialModule {}

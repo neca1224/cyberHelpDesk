@@ -19,12 +19,11 @@ const routes: Routes = [
       { path: 'herramientas', component: ToolsComponent },
       { path: 'herramientas/agregar', component: AddToolsComponent },
       { path: 'herramientas/editar/:id', component: AddToolsComponent },
-
       
       { path: 'malware', component: MalwareComponent },
       { path: 'malware/agregar', component: AddToolsComponent },
       { path: 'malware/editar/:id', component: AddToolsComponent },
-      { path: '**', redirectTo: 'admin' },
+      { path: '**', redirectTo: 'usuarios' },
     ],
   },
 ];

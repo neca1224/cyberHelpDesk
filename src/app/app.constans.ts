@@ -88,37 +88,37 @@ export const MENU = [
       {
         label: 'Listar Incidentes',
         icon: 'pi pi-list',
-        url:'./gestionIncidentes/incidentes'
+        url:'./incidentManagement/incidentes'
       },
       {
         label: 'Agregar Incidentes',
         icon: 'pi pi-plus',
-        url:'./gestionIncidentes/incidentes/agregar'
+        url:'./incidentManagement/incidentes/agregar'
       },
       {
         label: 'Editar Incidentes',
         icon: 'pi pi-file-edit',
-        url:'./gestionIncidentes/incidentes/editar/:id'
+        url:'./incidentManagement/incidentes/editar/:id'
       },
       {
         label: 'Analisis Incidentes',
         icon: 'pi pi-file-edit',
-        url:'./gestionIncidentes/analisis'
+        url:'./incidentManagement/analisis'
       },
       {
         label: 'Gestión Incidentes',
         icon: 'pi pi-file-edit',
-        url:'./gestionIncidentes/gestion'
+        url:'./incidentManagement/gestion'
       },
       {
         label: 'Impacto Incidentes',
         icon: 'pi pi-file-edit',
-        url:'./gestionIncidentes/impacto'
+        url:'./incidentManagement/impacto'
       },
       {
         label: 'Cerrar Incidentes',
         icon: 'pi pi-file-edit',
-        url:'./gestionIncidentes/cerrar'
+        url:'./incidentManagement/cerrar'
       },
     ],
   },

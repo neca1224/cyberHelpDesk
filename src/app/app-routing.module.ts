@@ -13,8 +13,8 @@ const routes: Routes = [
     loadChildren: ()=> import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path:'gestionIncidentes',
-    loadChildren: ()=> import('./gestion-incidentes/gestion-incidentes.module').then(m => m.GestionIncidentesModule)
+    path:'incidentManagement',
+    loadChildren: ()=> import('./incident-management/incident-management.module').then(m => m.IncidentManagementModule)
   },
   {
   path:'404',
