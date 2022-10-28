@@ -10,7 +10,8 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    
   ],
   imports: [
     BrowserModule,
