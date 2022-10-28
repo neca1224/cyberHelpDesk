@@ -27,28 +27,34 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## colaboradores
--Segundo Pantoja
-
+- Segundo Pantoja
 - David Gutierrez
-
+- David Gutierrez
+- Cenidier Ospina
 
 # Pasos para comenzar con una nueva tarea
 
-## Traer develop por primera vez 
+## Traer develop por primera vez
+
 ```code
 git fetch
-git checkout -b develop origin/develop 
+git checkout -b develop origin/develop
 ```
 
 ## parase en develop
+
 ```code
-git checkout develop 
+git checkout develop
 ```
+
 ## Actualizar todos los cambios
+
 ```
 git pull origin develop
 ```
+
 ## crear una rama copia de develop relacionada a la tarea
+
 ```
 git checkout -b <nombre-rama>
 ```
