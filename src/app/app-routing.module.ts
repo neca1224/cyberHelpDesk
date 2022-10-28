@@ -4,16 +4,16 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
 const routes: Routes = [
   {
-    path:'admin',
+    path:'administrador',
     loadChildren: ()=> import('./admin/admin.module').then(m => m.AdminModule)
   },
 
   {
-    path:'auth',
+    path:'autenticacion',
     loadChildren: ()=> import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path:'incidentManagement',
+    path:'gestion-incidentes',
     loadChildren: ()=> import('./incident-management/incident-management.module').then(m => m.IncidentManagementModule)
   },
   {

@@ -9,9 +9,6 @@ import { ToolsComponent } from './pages/tools/tools.component';
 import { AddUserComponent } from './pages/users/add-user/add-user.component';
 import { AddToolsComponent } from './pages/tools/add-tools/add-tools.component';
 import { AddMalwareComponent } from './pages/malware/add-malware/add-malware.component';
-import { PruebaComponent } from './pages/prueba/prueba.component';
-import { PruebasComponent } from './pages/pruebas/pruebas.component';
-
 
 @NgModule({
   declarations: [
@@ -22,13 +19,10 @@ import { PruebasComponent } from './pages/pruebas/pruebas.component';
     AddUserComponent,
     AddToolsComponent,
     AddMalwareComponent,
-    PruebaComponent,
-    PruebasComponent
   ],
   imports: [
     CommonModule,
     AdminRoutingModule
-    
   ]
 })
 export class AdminModule { }
