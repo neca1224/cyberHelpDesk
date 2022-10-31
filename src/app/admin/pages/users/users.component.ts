@@ -41,5 +41,5 @@ console.log(this.customers)
   handleInput(event: Event) {
     return (event.target as HTMLInputElement).value;
   }
-  clear(value: any) { }
+ 
 }
