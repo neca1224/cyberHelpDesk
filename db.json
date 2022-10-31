@@ -1,53 +1,57 @@
 {
-    "incidentes":[{
-        "fecha_identifca": "27/10/2022",
-        "hora_identifica ":"27/10/2022",
-        "id": 14,
-        "reporta_unida":"SI",
-        "estado ":"abierto",
-        "prioridad_resultante ":4,
-        "fecha_tratamiento   ": "27/10/2022",
-        "hora_respuesta  ": 15,
-        "vulnerabilidades_explo":"ninguna",
-        "fecha_crea":"27/10/2022",
-        "fecha_edita ":"27/10/2022",
-        "user_crea ":654,
-        "user_edita ":456,
-        "tipo_prio_x_esfuerzo_fk":2,
-        "tipo_incidente_fk":7,
-        "tipo_vector_ataque_fk":6,
-        "tipo_clasificacion_fk":3,
-        "tipo_impacto_funcional_fk":1,
-        "tipo_priorid_impacto_fk ":5,
-        "tipo_seguri_informacion_fk ":2,
-        "tipo_prior_aten_incidente_fk ":4,
-        "tipo_urgencia_atencion_fk":2,
-        "unidad_inciente_fk":111,
-        "tipo_especialidad_fk":3,
-        "descripcion_incidente":"ciberataque por Ransomware tumbó a la compañía de Kansas. La causa de la crisis radicó en un ataque dirigido con el ransomware WastedLocker como protagonista. Todo indica (no está probado) que el grupo de ciberdelincuentes Evil Corp, conocido por ser el responsable del malware Dridex y por usar esta técnica como parte de sus ataques, está detrás del caso y habrían pedido 10 millones de dólares de «rescate» por liberar el cifrado. Parece ser que Garmin terminó pagando.",
-        "fuerza_incidente_fk":3
-        }],
-    "usuarios":[{
-        "id" : 8475,
-        "empleado_fk":26,
-        "nombre_usuario": 80085978,
-        "pass": "9J21ZSVPndsoqKDbatCmXT6egeN9lH2C6sYp1Eil405dTCKLP65+7C3bSNDmeLiG",
-        "intentos_login":0,
-        "codigo_activacion":"",
-        "activo":1,
-        "REGISTRO_OPENLDAP":0,
-        "FECHA_REGISTRO_OPENLDAP":"27/10/2022"
-        
-        }],
-    "malware":[{
-        "id" : 125,
-        "fecha_crea":  "27/10/2022",
-        "fecha_edita":  "27/10/2022",
-        "user_crea":3846,
-        "user_edita":7943,
-        "estado": "activa",
-        "incidente_ciber_fk":10,
-        "tipo_malware_ciber_fk":8
-        
-        }]
+  "incidentes": [
+    {
+      "fecha_identifca": "27/10/2022",
+      "hora_identifica ": "27/10/2022",
+      "id": 14,
+      "reporta_unida": "SI",
+      "estado ": "abierto",
+      "prioridad_resultante ": 4,
+      "fecha_tratamiento   ": "27/10/2022",
+      "hora_respuesta  ": 15,
+      "vulnerabilidades_explo": "ninguna",
+      "fecha_crea": "27/10/2022",
+      "fecha_edita ": "27/10/2022",
+      "user_crea ": 654,
+      "user_edita ": 456,
+      "tipo_prio_x_esfuerzo_fk": 2,
+      "tipo_incidente_fk": 7,
+      "tipo_vector_ataque_fk": 6,
+      "tipo_clasificacion_fk": 3,
+      "tipo_impacto_funcional_fk": 1,
+      "tipo_priorid_impacto_fk ": 5,
+      "tipo_seguri_informacion_fk ": 2,
+      "tipo_prior_aten_incidente_fk ": 4,
+      "tipo_urgencia_atencion_fk": 2,
+      "unidad_inciente_fk": 111,
+      "tipo_especialidad_fk": 3,
+      "descripcion_incidente": "ciberataque por Ransomware tumbó a la compañía de Kansas. La causa de la crisis radicó en un ataque dirigido con el ransomware WastedLocker como protagonista. Todo indica (no está probado) que el grupo de ciberdelincuentes Evil Corp, conocido por ser el responsable del malware Dridex y por usar esta técnica como parte de sus ataques, está detrás del caso y habrían pedido 10 millones de dólares de «rescate» por liberar el cifrado. Parece ser que Garmin terminó pagando.",
+      "fuerza_incidente_fk": 3
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 8475,
+      "empleado_fk": 26,
+      "nombre_usuario": 80085978,
+      "pass": "9J21ZSVPndsoqKDbatCmXT6egeN9lH2C6sYp1Eil405dTCKLP65+7C3bSNDmeLiG",
+      "intentos_login": 0,
+      "codigo_activacion": "",
+      "activo": 1,
+      "REGISTRO_OPENLDAP": 0,
+      "FECHA_REGISTRO_OPENLDAP": "27/10/2022"
+    }
+  ],
+  "malware": [
+    {
+      "id": 125,
+      "fecha_crea": "27/10/2022",
+      "fecha_edita": "27/10/2022",
+      "user_crea": 3846,
+      "user_edita": 7943,
+      "estado": "activa",
+      "incidente_ciber_fk": 10,
+      "tipo_malware_ciber_fk": 8
+    }
+  ]
 }
