@@ -8,7 +8,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import {TieredMenuModule} from 'primeng/tieredmenu';
-import {ButtonModule} from 'primeng/button';
+import {MatTableModule} from '@angular/material/table';
+
+import {TableModule} from 'primeng/table';
+import {SliderModule} from 'primeng/slider';
+
 @NgModule({
   exports: [
     AccordionModule,
@@ -22,7 +26,10 @@ import {ButtonModule} from 'primeng/button';
     MatListModule,
     MatButtonModule,
     AccordionModule,
-    TieredMenuModule,ButtonModule
+    TieredMenuModule,
+    MatTableModule,
+    TableModule,
+    SliderModule
   ],
 
 })
