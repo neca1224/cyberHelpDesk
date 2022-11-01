@@ -9,8 +9,8 @@ import { ToolsComponent } from './pages/tools/tools.component';
 import { AddUserComponent } from './pages/users/add-user/add-user.component';
 import { AddToolsComponent } from './pages/tools/add-tools/add-tools.component';
 import { AddMalwareComponent } from './pages/malware/add-malware/add-malware.component';
-import { FormsModule } from '@angular/forms';
-import { MaterialModule } from '../material/material.module';
+import { PruebaComponent } from './pages/prueba/prueba.component';
+import { PruebasComponent } from './pages/pruebas/pruebas.component';
 
 
 @NgModule({
@@ -21,14 +21,15 @@ import { MaterialModule } from '../material/material.module';
     ToolsComponent,
     AddUserComponent,
     AddToolsComponent,
-    AddMalwareComponent
+    AddMalwareComponent,
+    PruebaComponent,
+    PruebasComponent
   ],
 
   imports: [
     CommonModule,
-    AdminRoutingModule,
-    MaterialModule,
-    FormsModule
+    AdminRoutingModule
+    
   ]
 })
 export class AdminModule { }
