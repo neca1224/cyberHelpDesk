@@ -29,8 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## colaboradores
 - Segundo Pantoja
 - David Gutierrez
-- David Gutierrez
 - Cenidier Ospina
+- Nelson Rueda
 
 # Pasos para comenzar con una nueva tarea
 
