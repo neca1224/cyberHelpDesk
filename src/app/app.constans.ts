@@ -93,6 +93,50 @@ export const MENU = [
     separator: true,
   },
   {
+    label: 'Gestión Incidentes',
+    icon: 'pi pi-qrcode',
+    items: [
+      {
+        label: 'Listar Incidentes',
+        icon: 'pi pi-list',
+        url:'./gestion-incidentes/incidentes'
+      },
+      {
+        label: 'Agregar Incidentes',
+        icon: 'pi pi-plus',
+        url:'./gestion-incidentes/incidentes/agregar'
+      },
+      {
+        label: 'Editar Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestion-incidentes/incidentes/editar/:id'
+      },
+      {
+        label: 'Analisis Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestion-incidentes/analisis'
+      },
+      {
+        label: 'Gestión Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestion-incidentes/gestion'
+      },
+      {
+        label: 'Impacto Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestion-incidentes/impacto'
+      },
+      {
+        label: 'Cerrar Incidentes',
+        icon: 'pi pi-file-edit',
+        url:'./gestion-incidentes/cerrar'
+      },
+    ],
+  },
+  {
+    separator: true,
+  },
+  {
     label: 'Quit',
     icon: 'pi pi-fw pi-power-off',
     url:'./auth/login'
