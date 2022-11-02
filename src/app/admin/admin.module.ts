@@ -18,7 +18,7 @@ import { AddMalwareComponent } from './pages/malware/add-malware/add-malware.com
     ToolsComponent,
     AddUserComponent,
     AddToolsComponent,
-    AddMalwareComponent,
+    AddMalwareComponent
   ],
   imports: [
     CommonModule,
