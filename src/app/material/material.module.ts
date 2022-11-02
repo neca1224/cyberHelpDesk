@@ -7,11 +7,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {TieredMenuModule} from 'primeng/tieredmenu';
 import {MatTableModule} from '@angular/material/table';
 
-import {TableModule} from 'primeng/table';
 import {SliderModule} from 'primeng/slider';
+import {TableModule} from 'primeng/table';
+import {TieredMenuModule} from 'primeng/tieredmenu';
+import { ProgressBarModule } from 'primeng/progressbar';
 
 @NgModule({
   exports: [
@@ -29,7 +30,8 @@ import {SliderModule} from 'primeng/slider';
     TieredMenuModule,
     MatTableModule,
     TableModule,
-    SliderModule
+    SliderModule,
+    ProgressBarModule
   ],
 
 })

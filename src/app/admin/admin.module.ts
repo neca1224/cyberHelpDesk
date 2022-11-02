@@ -24,8 +24,7 @@ import {ProgressBarModule} from 'primeng/progressbar';
     ToolsComponent,
     AddUserComponent,
     AddToolsComponent,
-    AddMalwareComponent
-    
+    AddMalwareComponent    
   ],
 
   imports: [

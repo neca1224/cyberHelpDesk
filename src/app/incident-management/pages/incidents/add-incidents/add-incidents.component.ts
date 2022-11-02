@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'chd-add-incidents',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-incidents.component.scss']
 })
 export class AddIncidentsComponent implements OnInit {
+
 
   constructor() { }
 
