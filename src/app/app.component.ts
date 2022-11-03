@@ -1,7 +1,6 @@
-import { Component, OnInit, enableProdMode } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 import { MENU } from './app.constans';
-
 import { SideMenuOption } from './shared/interfaces/menu.interfece';
 
 @Component({
@@ -12,11 +11,9 @@ import { SideMenuOption } from './shared/interfaces/menu.interfece';
 export class AppComponent implements OnInit {
   title = 'cyberHelpDesk';
   items!: SideMenuOption[];
-
   roles: string[] = ['user', 'develop']
 
   ngOnInit(): void {
-
     this.items = this.enableRole(MENU, this.roles);
   }
 
@@ -25,14 +22,14 @@ export class AppComponent implements OnInit {
     let initialMenu: SideMenuOption[] = [];
 
     return menu.reduce((accumulatorMenu: SideMenuOption[], current: SideMenuOption) => {
-
-      let rolRex = new RegExp(roles.join('|'));
+      const rolRex = new RegExp(roles.join('|'));
       let rolAdmit = false;
       if (current.enableRoles) {
         rolAdmit = rolRex.test(current.enableRoles.join())
       }
 
       if (accumulatorMenu.length && accumulatorMenu[accumulatorMenu.length - 1].separator && current.separator) {
+        
         return accumulatorMenu;
       }
       if (current.items) {
@@ -40,10 +37,10 @@ export class AppComponent implements OnInit {
       }
 
       if (!rolAdmit) {
-        console.log(' no incvc role ' + rolAdmit);
 
         return accumulatorMenu;
       }
+      
       return [...accumulatorMenu, current];
     }, initialMenu)
   }

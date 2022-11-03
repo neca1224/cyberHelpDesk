@@ -149,8 +149,9 @@ export const MENU :  SideMenuOption[]= [
     separator: true,
   },
   {
-    label: 'Quit',
+    label: 'Cerrar Sesión',
     icon: 'pi pi-fw pi-power-off',
-    routerLink:'./auth/login'
+    routerLink:'./autenticacion/login',
+    enableRoles: ['admin','develop','user'],
   },
 ];
