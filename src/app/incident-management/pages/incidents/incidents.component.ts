@@ -10,11 +10,8 @@ import * as FileSaver from 'file-saver';
 })
 export class IncidentsComponent implements OnInit {
 
-
   loading: boolean = true;
-
   incidentes: Incidentes[] = [];
-
   tablaIncidentes: TablaIncidentes[] = [];
 
   constructor(private incidentService: IncidentsService) { }
@@ -28,9 +25,9 @@ export class IncidentsComponent implements OnInit {
       this.tablaIncidentes = tablaIncidentes;
     });
   }
+
   handleInput(event: Event) {
     return (event.target as HTMLInputElement).value;
-
   }
 
   exportExcel() {
@@ -44,7 +41,6 @@ export class IncidentsComponent implements OnInit {
         unidad_inciente_fk: incident.unidad_inciente_fk,
         tipo_especialidad_fk: incident.tipo_especialidad_fk,
       }));
-      
       const worksheet = xlsx.utils.json_to_sheet<TablaIncidentes>(jsonToExel);
       const workbook = { Sheets: { 'data': worksheet }, SheetNames: ['data'] };
       const excelBuffer: any = xlsx.write(workbook, { bookType: 'xlsx', type: 'array' });
@@ -60,7 +56,4 @@ export class IncidentsComponent implements OnInit {
     });
     FileSaver.saveAs(data, fileName + '_export_' + new Date().getTime() + EXCEL_EXTENSION);
   }
-
-
-
 }
