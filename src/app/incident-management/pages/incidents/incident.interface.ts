@@ -21,3 +21,13 @@ export interface Incidentes{
     fuerza_incidente_fk: number;
 
 }
+
+export interface TablaIncidentes{
+    id: number;
+    fecha_identifca: Date;
+    estado: string;
+    tipo_incidente_fk: number;
+    prioridad_resultante: number;
+    unidad_inciente_fk: number;
+    tipo_especialidad_fk: number;
+}
