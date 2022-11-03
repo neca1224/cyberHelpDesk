@@ -1,5 +1,5 @@
 export interface UserI {
-  id: number;
+  id?: number;
   empleado_fk: number;
   nombre_usuario: number;
   pass: string;

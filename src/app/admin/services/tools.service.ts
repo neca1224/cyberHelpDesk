@@ -7,7 +7,7 @@ import { ToolsI } from '../interfaces/tools.interface';
 @Injectable({
   providedIn: 'root',
 })
-export class ToolsServiceService {
+export class ToolsService {
 
   private baseUrl = environment.baseUrl;
 

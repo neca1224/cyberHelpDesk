@@ -1,5 +1,5 @@
 export interface ToolsI {
-  id: number;
+  id?: number;
   fechaCrea: Date;
   fechaEdita: Date;
   userCrea: number;

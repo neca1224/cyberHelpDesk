@@ -1,4 +1,4 @@
-import { UserI } from './../interfaces/user.interface';
+import { UserI } from '../interfaces/user.interface';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class UserConfigServiceService {
+export class UserConfigService {
   private baseUrl = environment.baseUrl;
 
   constructor(private http: HttpClient) {}
@@ -31,7 +31,7 @@ export class UserConfigServiceService {
     return this.http.get<UserI[]>(`${this.baseUrl}/usuarios`);
   }
 
-  findAllPag(_page: number=1, _limit: number=2): Observable<UserI[]> {
+  findAllPag(_page: number = 1, _limit: number = 2): Observable<UserI[]> {
     return this.http.get<UserI[]>(`${this.baseUrl}/usuarios/`, {
       params: {
         _limit ,
