@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { environment } from "src/environments/environment";
-import { Incidentes, TablaIncidentes } from "../pages/incidents/incident.interface";
+import { Incidentes, TablaIncidentes } from "../../admin/interfaces/incident.interface";
 
 @Injectable({
     providedIn: 'root'

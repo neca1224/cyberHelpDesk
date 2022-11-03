@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Incidentes, TablaIncidentes } from './incident.interface';
+import { Incidentes, TablaIncidentes } from '../../../admin/interfaces/incident.interface';
 import { IncidentsService } from '../../services/incidents.service';
 import * as FileSaver from 'file-saver';
 
