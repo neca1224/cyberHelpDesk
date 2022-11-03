@@ -8,6 +8,8 @@ import { IncidentAnalysisComponent } from './pages/incident-analysis/incident-an
 import { IncidentManagementComponent } from './pages/incident-management/incident-management.component';
 import { IncidentManagementRoutingModule } from './incident-management-routing.module';
 import { IncidentsComponent } from './pages/incidents/incidents.component';
+import { MaterialModule } from '../material/material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,13 @@ import { IncidentsComponent } from './pages/incidents/incidents.component';
     IncidentAnalysisComponent,
     IncidentManagementComponent,
     IncidentsComponent
+    
   ],
   imports: [
     CommonModule,
-    IncidentManagementRoutingModule
+    IncidentManagementRoutingModule,
+    MaterialModule,
+    FormsModule
   ]
 })
 
