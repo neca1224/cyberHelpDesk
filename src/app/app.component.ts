@@ -1,6 +1,8 @@
 import { Component, OnInit, enableProdMode } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+
 import { MENU } from './app.constans';
+
+import { SideMenuOption } from './shared/interfaces/menu.interfece';
 
 @Component({
   selector: 'chd-root',
@@ -9,30 +11,41 @@ import { MENU } from './app.constans';
 })
 export class AppComponent implements OnInit {
   title = 'cyberHelpDesk';
-  // items = MENU;
-  items!: any;
-  num: number = 0;
-  num2: number = 0;
+  items!: SideMenuOption[];
+
+  roles: string[] = ['user', 'develop']
+
   ngOnInit(): void {
-    this.items = this.enableMenu(MENU, 'develop');
-    console.log(this.items);
+
+    this.items = this.enableRole(MENU, this.roles);
   }
 
-  enableMenu(menu: any, role: string) {
+  enableRole(menu: SideMenuOption[], roles: string[]) {
 
-    return menu.map((menu: any) => {
-      
-      if (menu.enableRoles && menu.enableRoles.length > 0) {
-        menu.disable = !menu.enableRoles.includes(role)
+    let initialMenu: SideMenuOption[] = [];
 
-        
+    return menu.reduce((accumulatorMenu: SideMenuOption[], current: SideMenuOption) => {
+
+      let rolRex = new RegExp(roles.join('|'));
+      let rolAdmit = false;
+      if (current.enableRoles) {
+        rolAdmit = rolRex.test(current.enableRoles.join())
       }
 
-      if (menu.items) {
-        menu.items = this.enableMenu(menu.items, role);           
-      }  
+      if (accumulatorMenu.length && accumulatorMenu[accumulatorMenu.length - 1].separator && current.separator) {
+        return accumulatorMenu;
+      }
+      if (current.items) {
+        current.items = this.enableRole(current.items, roles);
+      }
 
-      return menu;  
-    })
+      if (!rolAdmit) {
+        console.log(' no incvc role ' + rolAdmit);
+
+        return accumulatorMenu;
+      }
+      return [...accumulatorMenu, current];
+    }, initialMenu)
   }
+
 }
