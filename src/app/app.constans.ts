@@ -19,19 +19,19 @@ export const MENU :  SideMenuOption[]= [
       {
         label: 'Listar Usuarios',
         icon: 'pi pi-list',
-        url:'./administrador/usuarios',
+        routerLink:'./administrador/usuarios',
         enableRoles: ['admin']
       },
       {
         label: 'Agregar Usuario',
         icon: 'pi pi-fw pi-user-plus',
-        url:'./administrador/usuarios/agregar',
+        routerLink:'./administrador/usuarios/agregar',
         enableRoles: ['admin','develop']
       },
       {
         label: 'Editar Usuario',
         icon: 'pi pi-user-edit',
-        url:'./administrador/usuarios/editar/:id',
+        routerLink:'./administrador/usuarios/editar/:id',
         enableRoles: ['admin','develop']
       },      
     ],
