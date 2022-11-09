@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './pages/login/login.component';
+import { FieldsetModule } from 'primeng/fieldset';
+import {ChipsModule} from 'primeng/chips';
 
 
 @NgModule({
@@ -11,7 +13,10 @@ import { LoginComponent } from './pages/login/login.component';
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    FieldsetModule,
+    ChipsModule
+    
   ]
 })
 export class AuthModule { }
