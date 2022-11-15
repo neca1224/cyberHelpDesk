@@ -31,6 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - David Gutierrez
 - Cenidier Ospina
 - Nelson Rueda
+- Diego Leal
 
 # Pasos para comenzar con una nueva tarea
 
@@ -58,3 +59,4 @@ git pull origin develop
 ```
 git checkout -b <nombre-rama>
 ```
+
