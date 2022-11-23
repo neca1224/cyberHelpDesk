@@ -3,19 +3,18 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { SidebarModule } from 'primeng/sidebar';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 import { FooterModule } from "./shared/footer/footer.module";
 import { HeaderModule } from "./shared/header/header.module";
-import { MaterialModule } from './material/material.module';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
+    HomeComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -23,9 +22,7 @@ import { MaterialModule } from './material/material.module';
     BrowserModule,
     FooterModule,
     HeaderModule,
-    HttpClientModule,
-    MaterialModule,
-    SidebarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
