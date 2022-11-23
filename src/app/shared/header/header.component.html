@@ -1,0 +1,28 @@
+<p-sidebar [(visible)]="display" [baseZIndex]="10000" styleClass="ui-sidebar-lg" [style]="{'overflow': 'scroll'}">
+  <div>
+    _______
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </div>
+</p-sidebar>
+
+
+<header>
+  <div class="header-container">
+    <p-button type="text" (click)="display = true" icon="pi pi-plus" label="Show"></p-button>
+    <h1>Header para todas las paginas</h1>
+    <button
+      type="button"
+      pButton
+      icon="pi pi-bars"
+      label="MENU"
+      (click)="menu.toggle($event)">
+    </button>
+    <p-tieredMenu [style]="{'width':'15.5rem'}" #menu [model]="items" [popup]="true"></p-tieredMenu>
+  </div>
+</header>

@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { HomeComponent } from './pages/home/home.component';
+
 
 const routes: Routes = [
+  {
+    path:'',
+    component: HomeComponent
+  },
   {
     path:'administrador',
     loadChildren: ()=> import('./admin/admin.module').then(m => m.AdminModule)

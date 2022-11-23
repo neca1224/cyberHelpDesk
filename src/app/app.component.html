@@ -1,17 +1,3 @@
-<mat-sidenav-container fullscreen>
-  <mat-toolbar>
-    <button
-      #btn
-      type="button"
-      pButton
-      icon="pi pi-bars"
-      label="MENU"
-      (click)="menu.toggle($event)"
-    ></button>
-    <p-tieredMenu [style]="{'width':'15.5rem'}" #menu [model]="items" [popup]="true"></p-tieredMenu>
-  </mat-toolbar>
-
-  <div>
-    <router-outlet></router-outlet>
-  </div>
-</mat-sidenav-container>
+<chd-header></chd-header>
+<router-outlet></router-outlet>
+<chd-footer></chd-footer>
