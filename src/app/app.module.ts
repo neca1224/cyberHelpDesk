@@ -3,24 +3,33 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { SidebarModule } from 'primeng/sidebar';
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { FooterModule } from "./shared/footer/footer.module";
+import { HeaderModule } from "./shared/header/header.module";
 import { MaterialModule } from './material/material.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    FooterModule,
+    HeaderModule,
+    HttpClientModule,
     MaterialModule,
-    HttpClientModule
+    SidebarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 
-export class AppModule { }
+export class AppModule {
+}
